@@ -135,5 +135,15 @@ namespace AVS
         {
 
         }
+
+        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void bunifuImageButton3_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }
