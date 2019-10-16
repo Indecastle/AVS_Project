@@ -19,7 +19,7 @@ namespace AVS
         {
             InitializeComponent();
             Process[] processlist = Process.GetProcesses();
-            MyRun2();
+
             //GetProcess(textBox1, 500);
 
             /*foreach (Process theprocess in processlist)
@@ -144,6 +144,24 @@ namespace AVS
         private void bunifuImageButton3_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            if(sidemenu.Width >= 200)
+            {
+                pictureBox1.Location = new Point(8, 55);
+                pictureBox1.Size = new Size(35, 36);
+                sidemenu.Width = 50;
+                label1.Visible = false;
+            }
+            else
+            {
+                pictureBox1.Location = new Point(50, 15);
+                pictureBox1.Size = new Size(79, 65);
+                sidemenu.Width = 200;
+                label1.Visible = true;
+            }
         }
     }
 }
