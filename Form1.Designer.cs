@@ -48,7 +48,7 @@
             this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.page_monitoring1 = new AVS.page_monitoring();
+
             this.sidemenu.SuspendLayout();
             this.sidemenu_top.SuspendLayout();
             this.header.SuspendLayout();
@@ -152,7 +152,6 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.page_monitoring1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(200, 57);
             this.panel1.Name = "panel1";
@@ -390,14 +389,6 @@
             this.bunifuImageButton1.Zoom = 10;
             this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
-            // page_monitoring1
-            // 
-            this.page_monitoring1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.page_monitoring1.Location = new System.Drawing.Point(6, 6);
-            this.page_monitoring1.Name = "page_monitoring1";
-            this.page_monitoring1.Size = new System.Drawing.Size(688, 370);
-            this.page_monitoring1.TabIndex = 0;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -444,7 +435,6 @@
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private page_monitoring page_monitoring1;
     }
 }
 
