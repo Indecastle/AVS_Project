@@ -26,6 +26,7 @@ namespace AVS
             {
                 Console.WriteLine("Process: {0} ID: {1}", theprocess.ProcessName, theprocess.Id);
             }*/
+            page_monitoring1.timer1.Enabled = true;
 
         }
 
@@ -84,7 +85,7 @@ namespace AVS
             Task task1 = Task.Run(async () =>
             {
                 while (true) {
-                    GetProcess(textBox1, cpu, ram);
+                    //GetProcess(textBox1, cpu, ram);
                     await Task.Delay(700);
                 }
                 
@@ -94,7 +95,7 @@ namespace AVS
             {
                 while (true)
                 {
-                    GetProcess(textBox2, cpu, ram);
+                    //GetProcess(textBox2, cpu, ram);
                     await Task.Delay(200);
                 }
             });
@@ -162,6 +163,26 @@ namespace AVS
                 sidemenu.Width = 200;
                 label1.Visible = true;
             }
+        }
+
+        private void page_WMI1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            page_monitoring1.BringToFront();
+        }
+
+        private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        {
+            page_WMI1.BringToFront();
+        }
+
+        private void bunifuFlatButton4_Click(object sender, EventArgs e)
+        {
+            ram1.BringToFront();
         }
     }
 }

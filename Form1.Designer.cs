@@ -30,52 +30,34 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.sidemenu = new System.Windows.Forms.Panel();
-            this.sidemenu_top = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.header = new System.Windows.Forms.Panel();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuFlatButton5 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton4 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.sidemenu_top = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.header = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.page_WMI1 = new AVS.Page_WMI();
+            this.page_monitoring1 = new AVS.page_monitoring();
+            this.ram1 = new AVS.Ram();
             this.sidemenu.SuspendLayout();
             this.sidemenu_top.SuspendLayout();
-            this.header.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(379, 0);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(180, 90);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(565, 0);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(180, 90);
-            this.textBox2.TabIndex = 3;
             // 
             // sidemenu
             // 
@@ -92,71 +74,6 @@
             this.sidemenu.Name = "sidemenu";
             this.sidemenu.Size = new System.Drawing.Size(200, 528);
             this.sidemenu.TabIndex = 5;
-            // 
-            // sidemenu_top
-            // 
-            this.sidemenu_top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
-            this.sidemenu_top.Controls.Add(this.label1);
-            this.sidemenu_top.Controls.Add(this.pictureBox1);
-            this.sidemenu_top.Dock = System.Windows.Forms.DockStyle.Top;
-            this.sidemenu_top.Location = new System.Drawing.Point(0, 0);
-            this.sidemenu_top.Name = "sidemenu_top";
-            this.sidemenu_top.Size = new System.Drawing.Size(200, 144);
-            this.sidemenu_top.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Silver;
-            this.label1.Location = new System.Drawing.Point(24, 90);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 27);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Monitoring";
-            // 
-            // header
-            // 
-            this.header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(22)))), ((int)(((byte)(33)))));
-            this.header.Controls.Add(this.label2);
-            this.header.Controls.Add(this.textBox2);
-            this.header.Controls.Add(this.bunifuImageButton3);
-            this.header.Controls.Add(this.textBox1);
-            this.header.Controls.Add(this.bunifuImageButton2);
-            this.header.Controls.Add(this.bunifuImageButton1);
-            this.header.Dock = System.Windows.Forms.DockStyle.Top;
-            this.header.Location = new System.Drawing.Point(0, 0);
-            this.header.Name = "header";
-            this.header.Size = new System.Drawing.Size(1096, 57);
-            this.header.TabIndex = 6;
-            this.header.Paint += new System.Windows.Forms.PaintEventHandler(this.header_Paint);
-            this.header.MouseDown += new System.Windows.Forms.MouseEventHandler(this.header_MouseDown);
-            this.header.MouseMove += new System.Windows.Forms.MouseEventHandler(this.header_MouseMove);
-            this.header.MouseUp += new System.Windows.Forms.MouseEventHandler(this.header_MouseUp);
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 5;
-            this.bunifuElipse1.TargetControl = this;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.Color.Silver;
-            this.label2.Location = new System.Drawing.Point(40, 12);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 25);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Monitoring";
-            // 
-            // panel1
-            // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(200, 57);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(896, 528);
-            this.panel1.TabIndex = 7;
             // 
             // bunifuFlatButton5
             // 
@@ -234,7 +151,7 @@
             this.bunifuFlatButton4.BackColor = System.Drawing.Color.White;
             this.bunifuFlatButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton4.BorderRadius = 0;
-            this.bunifuFlatButton4.ButtonText = "    Manage";
+            this.bunifuFlatButton4.ButtonText = "    RAM";
             this.bunifuFlatButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuFlatButton4.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuFlatButton4.Iconcolor = System.Drawing.Color.Transparent;
@@ -258,10 +175,11 @@
             this.bunifuFlatButton4.selected = false;
             this.bunifuFlatButton4.Size = new System.Drawing.Size(200, 48);
             this.bunifuFlatButton4.TabIndex = 3;
-            this.bunifuFlatButton4.Text = "    Manage";
+            this.bunifuFlatButton4.Text = "    RAM";
             this.bunifuFlatButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton4.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
             this.bunifuFlatButton4.TextFont = new System.Drawing.Font("Segoe UI", 12.5F);
+            this.bunifuFlatButton4.Click += new System.EventHandler(this.bunifuFlatButton4_Click);
             // 
             // bunifuFlatButton2
             // 
@@ -269,7 +187,7 @@
             this.bunifuFlatButton2.BackColor = System.Drawing.Color.White;
             this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton2.BorderRadius = 0;
-            this.bunifuFlatButton2.ButtonText = "    Explorer";
+            this.bunifuFlatButton2.ButtonText = "    CPU";
             this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
@@ -293,18 +211,19 @@
             this.bunifuFlatButton2.selected = false;
             this.bunifuFlatButton2.Size = new System.Drawing.Size(200, 48);
             this.bunifuFlatButton2.TabIndex = 2;
-            this.bunifuFlatButton2.Text = "    Explorer";
+            this.bunifuFlatButton2.Text = "    CPU";
             this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton2.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
             this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Segoe UI", 12.5F);
+            this.bunifuFlatButton2.Click += new System.EventHandler(this.bunifuFlatButton2_Click);
             // 
             // bunifuFlatButton1
             // 
             this.bunifuFlatButton1.Activecolor = System.Drawing.Color.Silver;
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.BackColor = System.Drawing.Color.Silver;
             this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "    Home";
+            this.bunifuFlatButton1.ButtonText = "    Processes";
             this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
@@ -329,10 +248,33 @@
             this.bunifuFlatButton1.Size = new System.Drawing.Size(200, 48);
             this.bunifuFlatButton1.TabIndex = 1;
             this.bunifuFlatButton1.TabStop = false;
-            this.bunifuFlatButton1.Text = "    Home";
+            this.bunifuFlatButton1.Text = "    Processes";
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton1.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Segoe UI", 12.5F);
+            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
+            // 
+            // sidemenu_top
+            // 
+            this.sidemenu_top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
+            this.sidemenu_top.Controls.Add(this.label1);
+            this.sidemenu_top.Controls.Add(this.pictureBox1);
+            this.sidemenu_top.Dock = System.Windows.Forms.DockStyle.Top;
+            this.sidemenu_top.Location = new System.Drawing.Point(0, 0);
+            this.sidemenu_top.Name = "sidemenu_top";
+            this.sidemenu_top.Size = new System.Drawing.Size(200, 144);
+            this.sidemenu_top.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Silver;
+            this.label1.Location = new System.Drawing.Point(24, 90);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(135, 27);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Monitoring";
             // 
             // pictureBox1
             // 
@@ -343,6 +285,34 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // header
+            // 
+            this.header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(22)))), ((int)(((byte)(33)))));
+            this.header.Controls.Add(this.label2);
+            this.header.Controls.Add(this.bunifuImageButton3);
+            this.header.Controls.Add(this.bunifuImageButton2);
+            this.header.Controls.Add(this.bunifuImageButton1);
+            this.header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.header.Location = new System.Drawing.Point(0, 0);
+            this.header.Name = "header";
+            this.header.Size = new System.Drawing.Size(1096, 57);
+            this.header.TabIndex = 0;
+            this.header.Paint += new System.Windows.Forms.PaintEventHandler(this.header_Paint);
+            this.header.MouseDown += new System.Windows.Forms.MouseEventHandler(this.header_MouseDown);
+            this.header.MouseMove += new System.Windows.Forms.MouseEventHandler(this.header_MouseMove);
+            this.header.MouseUp += new System.Windows.Forms.MouseEventHandler(this.header_MouseUp);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.Color.Silver;
+            this.label2.Location = new System.Drawing.Point(40, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(107, 25);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Monitoring";
             // 
             // bunifuImageButton3
             // 
@@ -389,6 +359,51 @@
             this.bunifuImageButton1.Zoom = 10;
             this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.page_WMI1);
+            this.panel1.Controls.Add(this.page_monitoring1);
+            this.panel1.Controls.Add(this.ram1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(200, 57);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(896, 528);
+            this.panel1.TabIndex = 7;
+            // 
+            // page_WMI1
+            // 
+            this.page_WMI1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.page_WMI1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.page_WMI1.Location = new System.Drawing.Point(0, 0);
+            this.page_WMI1.Name = "page_WMI1";
+            this.page_WMI1.Size = new System.Drawing.Size(896, 528);
+            this.page_WMI1.TabIndex = 0;
+            this.page_WMI1.Load += new System.EventHandler(this.page_WMI1_Load);
+            // 
+            // page_monitoring1
+            // 
+            this.page_monitoring1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.page_monitoring1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.page_monitoring1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.page_monitoring1.Location = new System.Drawing.Point(0, 0);
+            this.page_monitoring1.Name = "page_monitoring1";
+            this.page_monitoring1.Size = new System.Drawing.Size(896, 528);
+            this.page_monitoring1.TabIndex = 0;
+            // 
+            // ram1
+            // 
+            this.ram1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.ram1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ram1.Location = new System.Drawing.Point(0, 0);
+            this.ram1.Name = "ram1";
+            this.ram1.Size = new System.Drawing.Size(896, 528);
+            this.ram1.TabIndex = 1;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -405,20 +420,18 @@
             this.sidemenu.ResumeLayout(false);
             this.sidemenu_top.ResumeLayout(false);
             this.sidemenu_top.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.header.ResumeLayout(false);
             this.header.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Panel sidemenu;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private System.Windows.Forms.Panel sidemenu_top;
@@ -435,6 +448,9 @@
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
+        private page_monitoring page_monitoring1;
+        private Page_WMI page_WMI1;
+        private Ram ram1;
     }
 }
 
