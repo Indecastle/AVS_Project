@@ -27,7 +27,8 @@ namespace AVS
                 Console.WriteLine("Process: {0} ID: {1}", theprocess.ProcessName, theprocess.Id);
             }*/
             page_monitoring1.timer1.Enabled = true;
-
+            //page_WMI1.timer1.Enabled = true;
+            //ram1.timer1.Enabled = true;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -173,16 +174,29 @@ namespace AVS
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
             page_monitoring1.BringToFront();
+            TimersOff();
+            page_monitoring1.timer1.Enabled = true;
         }
 
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
             page_WMI1.BringToFront();
+            TimersOff();
+            page_WMI1.timer1.Enabled = true;
         }
 
         private void bunifuFlatButton4_Click(object sender, EventArgs e)
         {
             ram1.BringToFront();
+            TimersOff();
+            ram1.timer1.Enabled = true;
+        }
+
+        private void TimersOff()
+        {
+            page_monitoring1.timer1.Enabled = false;
+            page_WMI1.timer1.Enabled = false;
+            ram1.timer1.Enabled = false;
         }
     }
 }

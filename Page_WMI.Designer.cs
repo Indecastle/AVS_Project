@@ -51,7 +51,6 @@
             // 
             // timer1
             // 
-            this.timer1.Enabled = true;
             this.timer1.Interval = 500;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
@@ -73,7 +72,7 @@
             this.label2.ForeColor = System.Drawing.Color.DimGray;
             this.label2.Location = new System.Drawing.Point(578, 259);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 25);
+            this.label2.Size = new System.Drawing.Size(93, 25);
             this.label2.TabIndex = 9;
             this.label2.Text = "CPU Total";
             // 
@@ -288,7 +287,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Timer timer1;
         private Bunifu.Framework.UI.BunifuGauge bunifuGauge1;
         private System.Windows.Forms.Label lbNameProc;
         private System.Windows.Forms.Label label2;
@@ -301,5 +299,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataVisualization.Charting.Chart cpuChart;
+        public System.Windows.Forms.Timer timer1;
     }
 }

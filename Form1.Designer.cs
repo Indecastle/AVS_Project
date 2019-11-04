@@ -46,9 +46,9 @@
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.page_WMI1 = new AVS.Page_WMI();
             this.page_monitoring1 = new AVS.page_monitoring();
             this.ram1 = new AVS.Ram();
+            this.page_WMI1 = new AVS.Page_WMI();
             this.sidemenu.SuspendLayout();
             this.sidemenu_top.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -366,24 +366,14 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.page_WMI1);
             this.panel1.Controls.Add(this.page_monitoring1);
             this.panel1.Controls.Add(this.ram1);
+            this.panel1.Controls.Add(this.page_WMI1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(200, 57);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(896, 528);
             this.panel1.TabIndex = 7;
-            // 
-            // page_WMI1
-            // 
-            this.page_WMI1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.page_WMI1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.page_WMI1.Location = new System.Drawing.Point(0, 0);
-            this.page_WMI1.Name = "page_WMI1";
-            this.page_WMI1.Size = new System.Drawing.Size(896, 528);
-            this.page_WMI1.TabIndex = 0;
-            this.page_WMI1.Load += new System.EventHandler(this.page_WMI1_Load);
             // 
             // page_monitoring1
             // 
@@ -403,6 +393,16 @@
             this.ram1.Name = "ram1";
             this.ram1.Size = new System.Drawing.Size(896, 528);
             this.ram1.TabIndex = 1;
+            // 
+            // page_WMI1
+            // 
+            this.page_WMI1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.page_WMI1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.page_WMI1.Location = new System.Drawing.Point(0, 0);
+            this.page_WMI1.Name = "page_WMI1";
+            this.page_WMI1.Size = new System.Drawing.Size(896, 528);
+            this.page_WMI1.TabIndex = 0;
+            this.page_WMI1.Load += new System.EventHandler(this.page_WMI1_Load);
             // 
             // Form1
             // 
